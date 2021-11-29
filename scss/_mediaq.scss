@@ -1,0 +1,74 @@
+
+    /*--------------- medias q --------------*/
+
+@media screen and (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    .menu a{
+        border: none;
+    }
+    header label{
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and(max-width:480px) {
+    .contacto{
+        width: 50%;
+        
+    }
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    #bannerCafeteria .contenedor h2{
+        font-size: 2rem;
+    }
+    #bannerCafeteria .contenedor p{
+        font-size: 1rem;
+        color: #fff;
+    }
+    #bannerCafeteria .contenedor a{
+        font-size: 1rem;
+    }
+    .tituloSecundario p{
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    .tituloTerciario p{
+        font-size: 1rem;
+        padding: 15px;
+    }
+    #bannerCafeteria .nosotros .contenedor p{
+        font-size: 1rem;
+    }
+    .formularioMaps{
+        display: flex;
+        flex-flow: column wrap;
+     }
+    
+}
+
+
+@media screen and(max-width:768px) {
+    .formularioMaps{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+     }
+     .container {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+

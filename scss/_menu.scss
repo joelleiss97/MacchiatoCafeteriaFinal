@@ -1,0 +1,44 @@
+#menu-bar{
+    display: none;
+}
+header label{
+    float: right;
+
+}
+header label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.9rem;
+    margin-left: 2.5rem;
+    margin: 6px 0;
+    
+}
+header label:hover{
+
+    color: $color-principal;
+}
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    top: 50px;
+    left: 0;
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+.menu a{
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+  
+
+}
+.menu a:hover{
+    background: $color-principal;
+}
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}

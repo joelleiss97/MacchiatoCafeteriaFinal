@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Slab:wght@300;400&display=swap');
+@import "variables";
+@import "menu";
+@import "bannercafeteria";
+@import "mediaq";
+@import "cafeteriaproductos";
+@import "nosotros";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    background: $color-fondo;
+}
+.icon-cup{
+    cursor: pointer;
+}
+.icon-cup:hover{
+    color: $color-principal;
+}
+header{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background: rgba(51,51,51,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+
+
+}
+h1{
+    float: left;
+}
+header .contenedor{
+    display: table;
+}
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+/*-----seccion de las card-----*/
+ 
+.tituloSecundario{
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+.tituloSecundario span{
+    color: $color-principal;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 50;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px solid $color-principal;
+    background-color: $fondo-relleno;
+    box-sizing: border-box;
+    
+}
+.card:hover{
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 350px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+.card .contenido span{
+    color: $color-principal;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #fff;
+}
+.card .contenido h3{
+    font-weight: 400px;
+    margin-bottom: 25px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+.card .contenido a:hover{
+    background: $color-principal;
+    color: #fff;
+}
+
+ /*--------------footer---------------*/
+ 
+ footer .contenedor{
+     display: flex;
+     flex-wrap: wrap;
+     padding-bottom: 25px;
+     justify-content: center;
+     color: #fff;
+     width: 100%;
+     height: 100%;
+     background: $fondo-relleno;
+     margin: 10px;
+     padding: 60px;
+ }
+ 
+ .contenedor__copy{
+     font-size: 1rem;
+
+ }
+ .contenedor__redes{
+     width: 100%;
+     text-align: center;
+     font-size: 30px;
+ }
+ .contenedor__redes a{
+     color: #fff;
+     text-decoration: none;
+     padding: 15px;
+ }
+ .contenedor__redes a:hover{
+     color: $color-principal;
+     font-size: 40px;
+     transition: all 400ms ease;
+ }
+ .contenedor__pagos{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+ }
+ .contenedor__pagos a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+ }
+ .contenedor__pagos a:hover{
+    color: $color-principal;
+    font-size: 40px;
+    transition: all 400ms ease;
+ }
+  .icon-llevar{
+    cursor: pointer;
+}
+ .icon-llevar:hover{
+    color: $color-principal;
+    font-size: 20px;
+    transition: all 400ms ease;
+}
+
+/*-------contacto-----*/
+form{
+    width: 400px;
+    margin: auto;
+    background: $fondo-relleno;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid $color-principal;
+
+}
+form h3{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 15px;
+}
+form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 15px;
+}
+form h2 span{
+    color: $color-principal;
+}
+form input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+form textarea{
+    min-height: 100px;
+    max-height: 300px;
+}
+.button{
+    color: #333 solid;
+    padding: 15px;
+    font-size: 1rem;
+
+}
+.button:hover{
+    color: $color-principal;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: all 400ms ease;
+}
+.contacto{
+   
+    justify-content: center;
+}
+.contactoMapa h3{  
+    font-size: 20px;
+    color: #fff ;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+.contactoMapa h3:hover{
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 400ms ease;
+    color: $color-principal;
+}
+.formularioMaps{
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerContacto .card{
+    border: 1px solid $color-principal;
+    width: 400px;
+    margin: auto;
+    background: $fondo-relleno;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.parrafoContacto{
+    font-size: 21px;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    
+}
+/*-----pasteleria----*/
+.pasteleria{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 14px 30px 0px $color-principal;
+    padding-left: 500px;
+    
+}
+.pasteleria-imagen{
+    width: 100%;
+}
+.pasteleria-imgagen img{
+    width: 100%;
+    vertical-align: top;
+}
+.pasteleria-info{
+    width: 50%;
+    border-radius: 10px;
+
+}
+.pasteleria .producto h1{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 40px;
+    
+
+}
+.pasteleria .producto h1 span{
+    color: $color-principal;
+}
+.pasteleria .producto p{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: 0,0, 47px, 38px;
+   
+    
+}
+.pasteleria .producto p:hover{
+    color: $color-principal;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+
