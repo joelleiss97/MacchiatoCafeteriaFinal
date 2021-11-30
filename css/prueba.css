@@ -121,12 +121,12 @@ header label:hover {
   #bannerCafeteria .contenedor h2 {
     font-size: 2rem; }
   #bannerCafeteria .contenedor p {
-    font-size: 1rem;
+    font-size: 0.5rem;
     color: #fff; }
   #bannerCafeteria .contenedor a {
     font-size: 1rem; }
   .tituloSecundario p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 15px; }
   .tituloTerciario p {
     font-size: 1rem;
@@ -144,7 +144,9 @@ header label:hover {
     justify-content: center; }
   .container {
     display: flex;
-    flex-flow: column wrap; } }
+    flex-flow: column wrap;
+    width: 55%;
+    max-width: 50; } }
 
 .tituloTerciario {
   font-size: 1.5rem;
@@ -219,7 +221,7 @@ header label:hover {
   color: #d3ad7f; }
 
 #bannerCafeteria .contenedor p {
-  font-size: 25px;
+  font-size: 30px;
   color: #fff; }
 
 .containerPasteleria {
@@ -283,7 +285,7 @@ header label:hover {
   display: inline-block;
   margin-top: 15px;
   color: #fff;
-  border: 1px solid #333;
+  border: 5px solid #fff;
   border-radius: 5px;
   transition: all 400ms ease;
   cursor: pointer;
@@ -294,7 +296,7 @@ header label:hover {
   background: #d3ad7f;
   color: #fff;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   transition: all 400ms ease; }
 
 * {
@@ -338,7 +340,7 @@ section {
 
 /*-----seccion de las card-----*/
 .tituloSecundario {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   text-align: center; }
 

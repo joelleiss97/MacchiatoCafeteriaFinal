@@ -35,14 +35,14 @@
         font-size: 2rem;
     }
     #bannerCafeteria .contenedor p{
-        font-size: 1rem;
+        font-size: 0.5rem;
         color: #fff;
     }
     #bannerCafeteria .contenedor a{
         font-size: 1rem;
     }
     .tituloSecundario p{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         padding: 15px;
     }
     .tituloTerciario p{
@@ -69,7 +69,8 @@
      .container {
         display: flex;
         flex-flow: column wrap;
-    }
+        width: 55%;
+        max-width: 50;
+        }
 
-}
-
+ }
