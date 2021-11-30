@@ -55,7 +55,18 @@
     .formularioMaps{
         display: flex;
         flex-flow: column wrap;
+    
+    
      }
+     .containerPasteleria{
+         flex-direction: column;
+         justify-content: center;
+         
+     }
+     .containerPasteleria .containerImagen{
+        padding-left: 30px;
+     }
+    
     
 }
 
@@ -63,14 +74,19 @@
 @media screen and(max-width:768px) {
     .formularioMaps{
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column;
         justify-content: center;
+
      }
+     
      .container {
         display: flex;
         flex-flow: column wrap;
         width: 55%;
         max-width: 50;
-        }
+    }
+    .containerContacto{
+        display: contents
 
+    }
  }
