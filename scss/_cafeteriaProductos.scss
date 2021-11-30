@@ -58,11 +58,13 @@
     border: 1px solid #333;
     border-radius: 5px;
     transition: all 400ms ease;
+    cursor: pointer;
 }
 .card .contenido a:hover{
     background: $color-principal;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 .tituloSalsas{
     font-size: 2rem;
